@@ -1,0 +1,91 @@
+nav a {
+    color: #0091ea !important;
+}
+nav ul :hover{
+    background-color: #e1f5fe;
+}
+
+.parallax-container{
+    height: 94vh;
+}
+
+.parallax-container img{
+    height: 160vh;
+    width: 100%;
+
+}
+
+h2, h3{
+    color: #0091ea;
+}
+
+.parallax{
+    opacity: 0.65;
+}
+
+.pin-top {
+   position: relative;
+}
+.pin-bottom {
+   position: relative;
+}
+.pinned {
+   position: fixed !important;
+}
+
+#nav-container{
+    height: 64px;
+}
+.card-reveal p{
+
+}
+
+#titleWrapper{
+    padding-top: 25vh;
+}
+
+#titleCard{
+    border: 10px gray;
+}
+
+#main-nav{
+    z-index: 2;
+}
+
+.section {
+    padding-top: 5rem;
+    padding-bottom:5rem;
+}
+
+#aboutme {
+    padding-bottom: 4em;
+}
+
+#skills-view .col {
+    height: 200px;
+}
+
+
+#project-view .row {
+    display:flex;
+}
+
+#project-view .card {
+    height: 85%;
+    margin: 2em;
+}
+
+#project-view .card-image span {
+    width: 100%;
+}
+
+#u-ecms-card .card-reveal p{
+    margin-top: 3em;
+}
+
+.card-reveal a{
+    position: absolute;
+    bottom: 2em;
+    left: 1.5em;
+    font-size: larger;
+}
