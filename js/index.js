@@ -12,14 +12,14 @@ $(document).ready(function(){
 });
 
 function initProjectView(){
-    let cards = $('#project-view .card');
-    let maxheight = 0;
+    let cards = document.querySelectorAll('#project-view .card');
+    let maxHeight = 0;
 
     for (let index in cards){
-        maxheight = Math.max(cards[index].style.height, maxheight);
+        maxHeight = Math.max(cards[index].style.height, maxHeight);
     }
     for (let index in cards){
-        cards[index].height(maxheight);
+        cards[index].height(maxHeight);
     }
 }
 

@@ -61,10 +61,15 @@ h2, h3{
     padding-bottom: 4em;
 }
 
-#skills-view .col {
-    height: 200px;
+#skills-view .col{
+    justify-content: center;
 }
 
+#skills-view .card{
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #project-view .row {
     display:flex;
