@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Mark Lynch</title>
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -34,16 +34,23 @@
         <nav id="main-nav" class="z-depth-2 grey lighten-4" datatarget="info-view" style="top: 0px;">
             <div class="container">
                 <div class="nav-wrapper">
-                    <a href="#" class="brand-logo">Mark Lynch</a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a class="" href="#about-me">About Me</a></li>
+                    <a href="#" class="brand-logo right">Mark Lynch</a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a class="about-me-nav-link" href="#about-me">About Me</a></li>
+                        <li><a class="project-view-nav-link" href="#project-view">Projects</a></li>
                         <li><a class="" href="docs/Mark%20Lynch_Resume.pdf">Resume</a></li>
-                        <li><a class="" href="#project-view">Projects</a></li>
-                        <li><a class="" href="#contact">Contact</a></li>
+                        <li><a class="contact-nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <ul class="sidenav" id="mobile-nav">
+            <li><a class="about-me-nav-link" href="#about-me">About Me</a></li>
+            <li><a class="project-view-nav-link" href="#project-view">Projects</a></li>
+            <li><a class="" href="docs/Mark%20Lynch_Resume.pdf">Resume</a></li>
+            <li><a class="contact-nav-link" href="#contact">Contact</a></li>
+        </ul>
     </div>
     <div class="container section center">
         <h2>About Me</h2>
@@ -136,13 +143,12 @@
             </div>
         </div>
     </div>
-
     <div class="container section center">
         <h2>Contact Me</h2>
         <p id="contact" class="scrollspy">Let's build something together!</p>
     </div>
-
 </div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="js/index.js"></script>
