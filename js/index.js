@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $('.parallax').parallax();
     $('.scrollspy').scrollSpy();
+    $('.sidenav').sidenav();
     $('.tabs').tabs();
 
     $('#main-nav').pushpin({
@@ -8,7 +9,7 @@ $(document).ready(function(){
         bottom: $("#info-view").offset().top + $("#info-view").outerHeight()
             - $("#main-nav").height()
     });
-    initProjectView();
+    //initProjectView();
 });
 
 function initProjectView(){
