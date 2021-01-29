@@ -20,10 +20,11 @@ Created: 10-07-2020
         <img src="img/primary.jpg" alt="">
         <div id="titleWrapper" class="valign-wrapper">
             <div class="row">
-                <div class="card black white-text center hoverable z-depth-5">
+                <div class="card white-text center z-depth-5">
                     <div id="titleCard" class="card-content">
-                        <div class="row">
-                            <div class="col">
+                        <div class="row flex">
+                            <div id="titleCard-bar" class="col s1 white"></div>
+                            <div id="nameplate" class="col s11">
                                 <h1>Mark Lynch</h1>
                                 <br>
                                 <h6>Software Engineer</h6>
@@ -160,15 +161,14 @@ Created: 10-07-2020
     <div class="container section center">
         <h2>Contact Me</h2>
         <p id="contact" class="scrollspy">Let's build something together!</p>
-        <div class="row">
-            <form class="col s12 l8 offset-l2" action="https://formspree.io/f/xbjpwnvj" method="POST">
+            <form class="col s12" action="https://formspree.io/f/xbjpwnvj" method="POST">
                 <div class="row">
-                    <div class="input-field col s6">
+                    <div class="input-field col s12 m12 l6">
                         <i class="material-icons prefix">person</i>
                         <input type="text" id="contact-name" class="materialize-textarea" name="name" required>
                         <label for="contact-name">Name</label>
                     </div>
-                    <div class="input-field col s6">
+                    <div class="input-field col s12 m12 l6">
                         <i class="material-icons prefix">email</i>
                         <input id="contact-email" type="email" class="validate" name="email" required>
                         <label for="contact-email">Email</label>
@@ -183,13 +183,12 @@ Created: 10-07-2020
                     </div>
                 </div>
                 <div class="row">
-                    <button id="contact-send-btn" class="btn-large blue waves-effect waves-light" type="submit">
+                    <button id="contact-send-btn" class="btn btn-large waves-effect waves-light" type="submit">
                         <i class="material-icons right">send</i>
                         Send
                     </button>
                 </div>
             </form>
-        </div>
     </div>
 </div>
 
@@ -201,12 +200,20 @@ Created: 10-07-2020
                 <p class="grey-text text-lighten-4">Thanks for visiting!</p>
             </div>
             <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
+                <h5 class="white-text">See more...</h5>
                 <ul>
-                    <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/malynch7/" target="_blank"
-                           rel="noopener noreferrer">Linkedin</a></li>
-                    <li><a class="grey-text text-lighten-3" href="https://github.com/malynch7/" target="_blank"
-                           rel="noopener noreferrer">Github</a></li>
+                    <li>
+                        <a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/malynch7/" target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="material-icons">linkedin</i>Linkedin
+                        </a>
+                    </li>
+                    <li>
+                        <a class="grey-text text-lighten-3" href="https://github.com/malynch7/" target="_blank"
+                           rel="noopener noreferrer">
+                        <i class="material-icons">code</i>Github
+                    </a>
+                    </li>
                 </ul>
             </div>
         </div>

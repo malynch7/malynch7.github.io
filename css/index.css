@@ -4,15 +4,23 @@ Author: Mark Lynch
 Created: 10-07-2020
 */
 
+:root {
+    --color-primary:  #2196F3;
+}
+
 /*==== General ==============================================================*/
 
 h2, h3{
-    color: #0091ea;
+    color: var(--color-primary);
 }
 
 .section {
     padding-top: 6rem;
     padding-bottom:6rem;
+}
+
+.flex {
+    display: inline-flex;
 }
 
 
@@ -22,12 +30,29 @@ h2, h3{
     padding-top: 25vh;
 }
 
-#titleCard{
-    border: 10px gray;
+#titleWrapper .card {
+    width: 80%;
+    margin: auto
 }
 
-.parallax{
-    opacity: 0.65;
+#titleCard {
+    background-color: var(--color-primary);
+    margin: 0 !important;
+
+}
+
+#titleCard .flex {
+    margin-bottom: 0;
+}
+
+#nameplate {
+    text-align: left;
+    padding-left: 2em;
+}
+
+#nameplate h1{
+    font-size: 5rem;
+    margin-top: 0;
 }
 
 .parallax-container{
@@ -35,16 +60,26 @@ h2, h3{
 }
 
 .parallax-container img{
-    height: 160vh;
-    width: 100%;
-
+    height: 130vh;
 }
 
+@media only screen and (min-width: 800px) {
+
+    #nameplate h1{
+        font-size: 6rem;
+        margin-top: 0;
+    }
+
+    #titleWrapper .card {
+        width: 80%;
+        margin: auto
+    }
+}
 
 /*==== Navbar ===============================================================*/
 
 nav a {
-    color: #0091ea !important;
+    color: var(--color-primary) !important;
 }
 
 nav ul :hover{
@@ -74,7 +109,7 @@ nav ul :hover{
 .sidenav a {
     font-size: 24px !important;
     margin-top: 1rem;
-    color: #0091ea !important;
+    color: var(--color-primary) !important;
     border-bottom: #969696;
 }
 
@@ -158,18 +193,32 @@ nav ul :hover{
 /* label focus color */
 .input-field input:focus + label,
 .input-field textarea:focus +label{
-    color: #0091ea !important;
+    color: var(--color-primary) !important;
 }
 /* label underline focus color */
 .input-field input:focus,
 .input-field textarea:focus{
-    border-bottom: 1px solid #0091ea !important;
-    box-shadow: 0 1px 0 0 #0091ea !important;
+    border-bottom: 1px solid var(--color-primary) !important;
+    box-shadow: 0 1px 0 0 var(--color-primary) !important;
 }
 /* icon prefix focus color */
 .input-field .prefix,
 .input-field .prefix.active{
-    color: #0091ea;
+    color: var(--color-primary);
+}
+
+form {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.btn {
+    background-color: var(--color-primary);
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #00b0ff;
 }
 
 
@@ -178,7 +227,12 @@ nav ul :hover{
 footer {
     clip-path: polygon(0 45%, 100% 0, 100% 100%, 0% 100%);
     padding-top: 10em !important;
+}
 
+.page-footer a>i {
+    width: 30px;
+    position: relative;
+    top: 5px;
 }
 
 @media only screen and (max-width: 993px){
