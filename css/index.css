@@ -1,3 +1,7 @@
+html {
+    font-size: 16px;
+}
+
 nav a {
     color: #0091ea !important;
 }
@@ -94,4 +98,37 @@ h2, h3{
     bottom: 2em;
     left: 1.5em;
     font-size: larger;
+}
+
+
+/*==== Contact Form ===========================================================*/
+#contact {
+    margin: 2em;
+}
+
+.input-field,
+#contact-send-btn{
+    margin-top: 4em;
+}
+
+
+/* label color */
+.input-field label {
+    color: #969696 !important;
+}
+/* label focus color */
+.input-field input:focus + label,
+.input-field textarea:focus +label{
+    color: #0091ea !important;
+}
+/* label underline focus color */
+.input-field input:focus,
+.input-field textarea:focus{
+    border-bottom: 1px solid #0091ea !important;
+    box-shadow: 0 1px 0 0 #0091ea !important;
+}
+/* icon prefix focus color */
+.input-field .prefix,
+.input-field .prefix.active{
+    color: #0091ea;
 }

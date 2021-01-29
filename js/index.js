@@ -4,6 +4,7 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
     $('.tabs').tabs();
 
+
     $('#main-nav').pushpin({
         top: $("#info-view").offset().top,
         bottom: $("#info-view").offset().top + $("#info-view").outerHeight()
