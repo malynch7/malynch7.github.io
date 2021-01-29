@@ -1,12 +1,33 @@
-html {
-    font-size: 16px;
+/*
+Description: Primary style sheet for portfolio at malynch7.github.io.
+Author: Mark Lynch
+Created: 10-07-2020
+*/
+
+/*==== General ==============================================================*/
+
+h2, h3{
+    color: #0091ea;
 }
 
-nav a {
-    color: #0091ea !important;
+.section {
+    padding-top: 6rem;
+    padding-bottom:6rem;
 }
-nav ul :hover{
-    background-color: #e1f5fe;
+
+
+/*==== Hero Section =========================================================*/
+
+#titleWrapper{
+    padding-top: 25vh;
+}
+
+#titleCard{
+    border: 10px gray;
+}
+
+.parallax{
+    opacity: 0.65;
 }
 
 .parallax-container{
@@ -19,51 +40,54 @@ nav ul :hover{
 
 }
 
-h2, h3{
-    color: #0091ea;
+
+/*==== Navbar ===============================================================*/
+
+nav a {
+    color: #0091ea !important;
 }
 
-.parallax{
-    opacity: 0.65;
-}
-
-.pin-top {
-   position: relative;
-}
-.pin-bottom {
-   position: relative;
-}
-.pinned {
-   position: fixed !important;
-}
-
-#nav-container{
-    height: 64px;
-}
-.card-reveal p{
-
-}
-
-#titleWrapper{
-    padding-top: 25vh;
-}
-
-#titleCard{
-    border: 10px gray;
+nav ul :hover{
+    background-color: #e1f5fe;
 }
 
 #main-nav{
     z-index: 2;
 }
 
-.section {
-    padding-top: 5rem;
-    padding-bottom:5rem;
+.pin-top {
+    position: relative;
 }
 
-#aboutme {
+.pin-bottom {
+    position: relative;
+}
+
+.pinned {
+    position: fixed !important;
+}
+
+#nav-container {
+    height: 64px;
+}
+
+.sidenav a {
+    font-size: 24px !important;
+    margin-top: 1rem;
+    color: #0091ea !important;
+    border-bottom: #969696;
+}
+
+.sidenav li:first-child{
+    margin-top: 3rem;
+}
+
+
+/*==== About Me =============================================================*/
+
+#about-me {
     padding-bottom: 4em;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 #skills-view .col{
@@ -74,6 +98,21 @@ h2, h3{
     max-width: 150px;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+/*==== Featured Projects ====================================================*/
+
+#project-container{
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+    padding-top: 8em;
+    padding-bottom: 8em;
+}
+
+@media only screen and (max-width: 993px){
+    #project-container {
+        clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%);
+    }
 }
 
 #project-view .row {
@@ -102,16 +141,16 @@ h2, h3{
 
 
 /*==== Contact Form ===========================================================*/
+
 #contact {
     margin: 2em;
+    font-size:16px;
 }
 
 .input-field,
 #contact-send-btn{
     margin-top: 4em;
 }
-
-
 /* label color */
 .input-field label {
     color: #969696 !important;
@@ -131,4 +170,19 @@ h2, h3{
 .input-field .prefix,
 .input-field .prefix.active{
     color: #0091ea;
+}
+
+
+/*==== Footer ===============================================================*/
+
+footer {
+    clip-path: polygon(0 45%, 100% 0, 100% 100%, 0% 100%);
+    padding-top: 10em !important;
+
+}
+
+@media only screen and (max-width: 993px){
+    footer {
+        clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+    }
 }
