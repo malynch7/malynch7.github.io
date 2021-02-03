@@ -18,6 +18,8 @@ $(document).ready(function(){
         bottom: infoView.offset().top + infoView.outerHeight()
             - $("#main-nav").height()
     });
+
+    activatePopulatedContactFields();
     //initProjectView();
 });
 
@@ -36,3 +38,11 @@ function initProjectView(){
     }
 }
 
+
+/*==== Contact Me ===========================================================*/
+
+function activatePopulatedContactFields() {
+    M.updateTextFields();
+    const messageElement = document.getElementById('contact-message');
+    M.textareaAutoResize(messageElement);
+}
