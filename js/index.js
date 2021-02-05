@@ -14,8 +14,6 @@ $(document).ready(function(){
 
     fitPageToSize();
     activatePopulatedContactFields();
-
-    window.addEventListener("resize", fitPageToSize);
 });
 
 function fitPageToSize() {
