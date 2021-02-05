@@ -31,8 +31,8 @@ function activatePushpin() {
 
 function setHeroToInnerWindow() {
     const heroContainer = document.querySelector('.parallax-container');
-    const navbar = document.getElementById('nav-container');
-    const navbarHeight = window.getComputedStyle(navbar,null).getPropertyValue('height');
+    const navbarHeight = document.getElementById('main-nav').clientHeight;
+
     heroContainer.style.height = ((window.innerHeight) - parseInt(navbarHeight) - 2) + 'px';
 }
 
