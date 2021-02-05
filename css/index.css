@@ -135,6 +135,10 @@ nav ul :hover{
     margin-right: auto;
 }
 
+#skills-view .card-content {
+    padding: .5em;
+}
+
 
 /*==== Featured Projects ====================================================*/
 

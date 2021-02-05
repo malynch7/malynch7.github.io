@@ -12,30 +12,32 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
     $('.tabs').tabs();
 
+    fitPageToSize();
+    activatePopulatedContactFields();
+
+    window.addEventListener("resize", fitPageToSize);
+});
+
+function fitPageToSize() {
+    setHeroToInnerWindow();
+    activatePushpin();
+}
+
+function activatePushpin() {
     const infoView = $("#info-view");
     $('#main-nav').pushpin({
         top: infoView.offset().top,
         bottom: infoView.offset().top + infoView.outerHeight() - $("#main-nav").height()
     });
-
-    activatePopulatedContactFields();
-    //initProjectView();
-});
-
-
-/*==== Featured Projects ====================================================*/
-
-function initProjectView(){
-    let cards = $('#project-view .card');
-    let maxHeight = 0;
-
-    for (const card of cards){
-        maxHeight = Math.max(parseInt(card.style.height), maxHeight);
-    }
-    for (const card of cards){
-        card.height(maxHeight);
-    }
 }
+
+function setHeroToInnerWindow() {
+    const heroContainer = document.querySelector('.parallax-container');
+    const navbar = document.getElementById('nav-container');
+    const navbarHeight = window.getComputedStyle(navbar,null).getPropertyValue('height');
+    heroContainer.style.height = ((window.innerHeight) - parseInt(navbarHeight) - 2) + 'px';
+}
+
 
 
 /*==== Contact Me ===========================================================*/
