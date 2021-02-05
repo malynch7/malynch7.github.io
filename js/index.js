@@ -37,7 +37,6 @@ function setHeroToInnerWindow() {
 }
 
 
-
 /*==== Contact Me ===========================================================*/
 
 function activatePopulatedContactFields() {

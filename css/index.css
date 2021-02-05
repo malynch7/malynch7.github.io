@@ -159,8 +159,13 @@ nav ul :hover{
 }
 
 #project-view .card {
-    height: 310px;
     margin: 2em;
+}
+
+@media only screen and (max-width: 1610px) and (min-width: 993px){
+    #project-view .card {
+        margin: 1em;
+    }
 }
 
 #project-view .card-content {
@@ -181,12 +186,17 @@ nav ul :hover{
 }
 
 #u-bacteria-card .card-reveal i {
-    position: relative;
-    top: -1.4em;
+    position: absolute;
+    top: 1em;
+    right: 1em;
 }
 
 #u-gol-card .card-reveal p{
     margin-top: 3em;
+}
+
+#u-gol-card .card-image i {
+    color: white;
 }
 
 #project-view .card-image i {
@@ -203,9 +213,8 @@ nav ul :hover{
 
 .card-reveal button {
     position: absolute;
-    bottom: 3.5em;
+    bottom: 4.5em;
     left: 1.5em;
-    font-size: larger;
 }
 
 
