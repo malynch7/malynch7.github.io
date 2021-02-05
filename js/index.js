@@ -15,8 +15,7 @@ $(document).ready(function(){
     const infoView = $("#info-view");
     $('#main-nav').pushpin({
         top: infoView.offset().top,
-        bottom: infoView.offset().top + infoView.outerHeight()
-            - $("#main-nav").height()
+        bottom: infoView.offset().top + infoView.outerHeight() - $("#main-nav").height()
     });
 
     activatePopulatedContactFields();
@@ -42,7 +41,8 @@ function initProjectView(){
 /*==== Contact Me ===========================================================*/
 
 function activatePopulatedContactFields() {
-    M.updateTextFields();
     const messageElement = document.getElementById('contact-message');
+
+    M.updateTextFields();
     M.textareaAutoResize(messageElement);
 }

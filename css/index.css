@@ -155,7 +155,7 @@ nav ul :hover{
 }
 
 #project-view .card {
-    height: 85%;
+    height: 330px;
     margin: 2em;
 }
 
@@ -167,9 +167,34 @@ nav ul :hover{
     margin-top: 3em;
 }
 
+#u-bacteria-card .card-reveal p{
+    margin-top: 1em;
+}
+
+#u-bacteria-card .card-reveal i {
+    position: relative;
+    top: -1.4em;
+}
+
+#u-gol-card .card-reveal p{
+    margin-top: 3em;
+}
+
+#project-view .card-image i {
+    position: relative;
+    top: 10px;
+}
+
 .card-reveal a{
     position: absolute;
     bottom: 2em;
+    left: 1.5em;
+    font-size: larger;
+}
+
+.card-reveal button {
+    position: absolute;
+    bottom: 4.5em;
     left: 1.5em;
     font-size: larger;
 }
