@@ -143,6 +143,8 @@ nav ul :hover{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    max-width: 900px;
+    margin: auto;
 }
 
 
